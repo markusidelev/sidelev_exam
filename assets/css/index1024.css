@@ -1,0 +1,59 @@
+@media all and (max-width: 768px) {
+  .header-logo {
+    /* transform: translateX(0); */
+    width: 100vw;
+  }
+
+  .article {
+    width: 100%;
+    
+    margin-bottom: 20px;
+    background: #f8f9fa;
+    padding-bottom: 25px;
+    
+    padding-bottom: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+  }
+  
+  .img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    overflow: hidden;
+  }
+  
+  .img img {
+    width: 100%;
+  }
+
+  .article h2{
+    font-size: 20px;
+    margin: 15px 30px 0;
+  }
+
+  .info {
+    font-size: 10px;
+    margin: 15px 30px;
+  }
+
+  .annotation {
+    font-size: 14px;
+    margin: 15px 30px 0;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .footer-logo {
+    height: 120px;
+    background-color: transparent;
+  }
+
+  .footer-main,
+  .footer-cr {
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+}

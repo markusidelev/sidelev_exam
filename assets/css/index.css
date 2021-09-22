@@ -1,0 +1,320 @@
+/* В этом файле вы пишете css код вашего приложения */
+/* 
+font-family: 'Spectral', serif;
+font-family: 'Roboto', sans-serif; */
+
+button {
+  border: none;
+}
+
+html {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f1f3f5;
+}
+
+.container {
+  max-width: 1240px;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+  background: url('/assets/img/bg.jpg') bottom center / cover no-repeat;
+  display: flex;
+  flex: 0 0 300px;
+  margin-bottom: 60px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.header-title {
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+.header-logo {
+  transform: translateX(60px);
+  margin-bottom: 35px;
+}
+
+.header-title__main {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.header-title__add {
+  font-weight: 400;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+/* end header */
+
+/* articles-list */
+
+.articles-list {
+  padding: 0 20px;
+}
+
+.article {
+  width: 840px;
+  
+  margin-bottom: 40px;
+  background: #f8f9fa;
+  
+  padding-bottom: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  transition: 1s;
+}
+
+.article:hover{
+  transform: scale(1.02);
+}
+
+.img {
+  width: 840px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.img img {
+  width: 840px;
+  
+}
+
+.article h2 {
+  margin: 30px 40px 0;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Spectral', serif;
+
+}
+
+.info {
+  margin: 15px 40px;
+  text-align: justify;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.info span{
+  font-style: italic;
+
+}
+
+.annotation {
+  margin: 15px 40px 0;
+  text-align: justify;
+  font-size: 16px;
+  font-family: 'Spectral', serif;
+  font-weight: 600;
+}
+
+/* end articles-list */
+
+.sidebar {
+  width: calc(100% - 40px);
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sidebar-item {
+  margin-bottom: 45px;
+}
+
+.sidebar-item__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-item__title .delimiter {
+  flex: 1;
+  margin: 0 10px;
+  height: 2px;
+  background-color: #8c8d8e;
+}
+
+.sidebar-item__title .title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.sidebar-item__title .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-item__label {
+  font-weight: 700;
+  color: white;
+  font-size: 12px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #262626;
+  transition: all 0.25s;
+  text-decoration: none;
+}
+
+.sidebar-item__label:hover {
+  background-color: #8c8d8e;
+}
+
+/* стили селекта авторов */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: white;
+  background-image: none;
+}
+.select {
+  position: relative;
+  display: block;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: white;
+  overflow: hidden;
+  border-radius: 5px  ;
+  border: #8c8d8e 0.5px solid;
+}
+select {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: #333333;
+  cursor: pointer;
+  font-style: italic;
+  padding-left: 20px;
+  font-size: 14px;  
+  
+}
+select::-ms-expand {
+  display: none;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1em;
+  background: #262626;
+  pointer-events: none;
+  
+}
+/* Transition */
+.select:hover::after {
+  color: white;
+}
+.select::after {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+/* кнопки сайдбара */
+#year .active {
+  background-color: #324772 !important;
+}
+
+#month .active {
+  background-color: #324772 !important;
+  /* background-color: #8c8d8e !important; */
+}
+/* стили кнопок страниц */
+#page {
+  margin: 0 auto;
+}
+
+#page button {
+  margin:5px; 
+  background-color:#262626;
+  color: white; font-family: "Roboto",  sans-serif; 
+  font-size:16px;
+  height: 30px;
+  min-width: 30px; 
+}
+#page button:hover {
+  background-color: #8c8d8e;
+}
+#page .active {
+  background-color: #324772 ;
+}
+
+#page .dots {
+  text-align: center;
+  display: inline;
+  margin:5px; 
+  background-color: #f1f3f5;
+  color: #333333; 
+  
+  /* height: 30px;
+  width: 30px;  */
+}
+
+
+
+/* footer */
+
+.footer {
+  flex: 0 0 120px;
+  line-height: 120px;
+  display: flex;
+  background-color: #262626;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-logo {
+  flex: 0 0 120px;
+  display: flex;
+  background-color: #000;
+}
+
+.footer-logo__pic {
+  margin: auto;
+  width: 38px;
+  height: 44px;
+}
+
+.footer-main,
+.footer-cr {
+  text-align: center;
+}
+
+.footer-main {
+  flex: 1;
+}
+
+.footer-cr {
+  flex: 0 0 200px;
+}
+
+/* end footer */
